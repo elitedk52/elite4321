@@ -2,35 +2,36 @@ import { Button } from "@/components/ui/button"
 
 const projects = [
   {
-    title: "Enchanted E-commerce",
-    category: "Interactive Shopping Experience",
-    description: "A magical online store that transforms product browsing into an immersive fairy tale journey.",
-    image: "/magical-ecommerce-website-with-floating-products-a.jpg",
-    tags: ["3D Design", "WebGL", "Interactive UI"],
+    title: "E-commerce Platform",
+    category: "Full-Stack Application",
+    description:
+      "A modern e-commerce platform built with Next.js, featuring real-time inventory, payment processing, and admin dashboard.",
+    image: "/modern-ecommerce-interface.png",
+    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
   },
   {
-    title: "Storybook Portfolio",
-    category: "Creative Showcase",
+    title: "SaaS Dashboard",
+    category: "React Application",
     description:
-      "A portfolio website that unfolds like a children's storybook, with animated characters and interactive elements.",
-    image: "/storybook-style-portfolio-website-with-animated-ch.jpg",
-    tags: ["Animation", "Storytelling", "Creative Dev"],
+      "A comprehensive SaaS dashboard with analytics, user management, and subscription handling built with React and Node.js.",
+    image: "/sleek-saas-dashboard-with-charts-graphs-and-data-v.jpg",
+    tags: ["React", "Node.js", "MongoDB", "Chart.js"],
   },
   {
-    title: "Mystical Dashboard",
-    category: "Data Visualization",
+    title: "API Gateway",
+    category: "Backend Architecture",
     description:
-      "Transforming complex data into beautiful, crystal ball-inspired visualizations that make analytics magical.",
-    image: "/mystical-dashboard-with-crystal-ball-data-visualiz.jpg",
-    tags: ["Data Viz", "UI/UX", "Interactive"],
+      "Scalable microservices API gateway with authentication, rate limiting, and real-time monitoring capabilities.",
+    image: "/api-architecture-diagram-with-microservices-and-da.jpg",
+    tags: ["Node.js", "Docker", "Redis", "GraphQL"],
   },
   {
-    title: "Fairy Tale CMS",
-    category: "Content Management",
+    title: "Mobile-First PWA",
+    category: "Progressive Web App",
     description:
-      "A content management system designed like a magical library, making content creation feel like writing stories.",
-    image: "/magical-library-interface-for-content-management-s.jpg",
-    tags: ["CMS", "User Experience", "Creative Interface"],
+      "A mobile-first progressive web app with offline capabilities, push notifications, and native-like performance.",
+    image: "/mobile-progressive-web-app-interface-on-smartphone.jpg",
+    tags: ["PWA", "Service Workers", "IndexedDB", "Web APIs"],
   },
 ]
 
@@ -40,11 +41,11 @@ export function Projects() {
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-6 text-foreground">
-            Magical <span className="text-primary">Creations</span>
+            Featured <span className="text-primary">Projects</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-balance">
-            Each project is a unique story, crafted with love, imagination, and cutting-edge technology to create
-            experiences that enchant and inspire.
+            Each project represents a unique technical challenge, built with modern technologies and best practices to
+            deliver scalable, performant, and user-focused solutions.
           </p>
         </div>
 
@@ -88,7 +89,7 @@ export function Projects() {
                   variant="outline"
                   className="group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary transition-all duration-300 bg-transparent"
                 >
-                  Explore Project →
+                  View Project →
                 </Button>
               </div>
             </div>
@@ -97,7 +98,7 @@ export function Projects() {
 
         <div className="text-center mt-16">
           <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-4 rounded-full">
-            View All Magical Works
+            View All Projects
           </Button>
         </div>
       </div>

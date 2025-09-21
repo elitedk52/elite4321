@@ -4,32 +4,32 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Fairy tale color palette inspired by the design */
-  --background: oklch(0.96 0.02 280); /* Soft lavender-white */
-  --foreground: oklch(0.15 0.05 260); /* Deep purple-navy */
-  --card: oklch(0.98 0.01 280); /* Pure white with hint of lavender */
-  --card-foreground: oklch(0.15 0.05 260);
-  --popover: oklch(0.98 0.01 280);
-  --popover-foreground: oklch(0.15 0.05 260);
-  --primary: oklch(0.45 0.15 280); /* Magical purple */
-  --primary-foreground: oklch(0.98 0.01 280);
-  --secondary: oklch(0.85 0.08 320); /* Soft pink */
-  --secondary-foreground: oklch(0.15 0.05 260);
-  --muted: oklch(0.92 0.03 280);
-  --muted-foreground: oklch(0.55 0.08 260);
-  --accent: oklch(0.75 0.12 200); /* Dreamy blue */
-  --accent-foreground: oklch(0.98 0.01 280);
+  /* Web development focused color palette - darker, more grounded */
+  --background: oklch(0.08 0.01 240); /* Deep navy background */
+  --foreground: oklch(0.95 0.02 200); /* Bright cyan-white text */
+  --card: oklch(0.12 0.02 240); /* Dark card background */
+  --card-foreground: oklch(0.95 0.02 200);
+  --popover: oklch(0.12 0.02 240);
+  --popover-foreground: oklch(0.95 0.02 200);
+  --primary: oklch(0.65 0.2 180); /* Electric cyan */
+  --primary-foreground: oklch(0.08 0.01 240);
+  --secondary: oklch(0.25 0.08 120); /* Matrix green */
+  --secondary-foreground: oklch(0.95 0.02 200);
+  --muted: oklch(0.18 0.02 240);
+  --muted-foreground: oklch(0.65 0.05 200);
+  --accent: oklch(0.75 0.15 60); /* Code yellow */
+  --accent-foreground: oklch(0.08 0.01 240);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.88 0.04 280);
-  --input: oklch(0.88 0.04 280);
-  --ring: oklch(0.45 0.15 280);
+  --border: oklch(0.25 0.03 240);
+  --input: oklch(0.25 0.03 240);
+  --ring: oklch(0.65 0.2 180);
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 1rem;
+  --radius: 0.5rem;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
   --sidebar-primary: oklch(0.205 0 0);
@@ -41,25 +41,25 @@
 }
 
 .dark {
-  --background: oklch(0.08 0.02 260);
-  --foreground: oklch(0.95 0.02 280);
-  --card: oklch(0.12 0.03 260);
-  --card-foreground: oklch(0.95 0.02 280);
-  --popover: oklch(0.12 0.03 260);
-  --popover-foreground: oklch(0.95 0.02 280);
-  --primary: oklch(0.65 0.18 280);
-  --primary-foreground: oklch(0.08 0.02 260);
-  --secondary: oklch(0.25 0.05 280);
-  --secondary-foreground: oklch(0.95 0.02 280);
-  --muted: oklch(0.18 0.03 260);
-  --muted-foreground: oklch(0.65 0.08 280);
-  --accent: oklch(0.35 0.08 200);
-  --accent-foreground: oklch(0.95 0.02 280);
+  --background: oklch(0.05 0.01 240);
+  --foreground: oklch(0.98 0.02 180);
+  --card: oklch(0.08 0.02 240);
+  --card-foreground: oklch(0.98 0.02 180);
+  --popover: oklch(0.08 0.02 240);
+  --popover-foreground: oklch(0.98 0.02 180);
+  --primary: oklch(0.7 0.25 180);
+  --primary-foreground: oklch(0.05 0.01 240);
+  --secondary: oklch(0.3 0.1 120);
+  --secondary-foreground: oklch(0.98 0.02 180);
+  --muted: oklch(0.15 0.02 240);
+  --muted-foreground: oklch(0.7 0.05 180);
+  --accent: oklch(0.8 0.18 60);
+  --accent-foreground: oklch(0.05 0.01 240);
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.25 0.05 260);
-  --input: oklch(0.25 0.05 260);
-  --ring: oklch(0.65 0.18 280);
+  --border: oklch(0.2 0.03 240);
+  --input: oklch(0.2 0.03 240);
+  --ring: oklch(0.7 0.25 180);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -125,30 +125,38 @@
   }
 }
 
-/* Custom fairy tale animations */
-@keyframes float {
+/* Custom web development animations */
+@keyframes codeFloat {
   0%,
   100% {
-    transform: translateY(0px);
+    transform: translateY(0px) rotate(0deg);
   }
   50% {
-    transform: translateY(-20px);
+    transform: translateY(-15px) rotate(2deg);
   }
 }
 
-@keyframes sparkle {
+@keyframes digitalGlitch {
   0%,
   100% {
-    opacity: 0;
-    transform: scale(0);
-  }
-  50% {
     opacity: 1;
     transform: scale(1);
   }
+  25% {
+    opacity: 0.8;
+    transform: scale(1.02);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(0.98);
+  }
+  75% {
+    opacity: 0.9;
+    transform: scale(1.01);
+  }
 }
 
-@keyframes shimmer {
+@keyframes codeShimmer {
   0% {
     background-position: -200% 0;
   }
@@ -157,16 +165,82 @@
   }
 }
 
-.float-animation {
-  animation: float 6s ease-in-out infinite;
+@keyframes matrixRain {
+  0% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
 }
 
-.sparkle-animation {
-  animation: sparkle 2s ease-in-out infinite;
+@keyframes cursorBlink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
-.shimmer-text {
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+.code-float-animation {
+  animation: codeFloat 4s ease-in-out infinite;
+}
+
+.digital-glitch-animation {
+  animation: digitalGlitch 3s ease-in-out infinite;
+}
+
+.code-shimmer-text {
+  background: linear-gradient(90deg, transparent, rgba(101, 255, 255, 0.6), transparent);
   background-size: 200% 100%;
-  animation: shimmer 3s ease-in-out infinite;
+  animation: codeShimmer 2s ease-in-out infinite;
+}
+
+.matrix-rain {
+  animation: matrixRain 8s linear infinite;
+}
+
+.cursor-blink {
+  animation: cursorBlink 1s infinite;
+}
+
+/* Added mouse trail and cursor effects */
+.mouse-trail {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(101, 255, 255, 0.8) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.1s ease-out;
+}
+
+.custom-cursor {
+  cursor: none;
+}
+
+.custom-cursor * {
+  cursor: none !important;
+}
+
+.code-cursor {
+  position: fixed;
+  width: 2px;
+  height: 20px;
+  background: #65ffff;
+  pointer-events: none;
+  z-index: 9998;
+  transition: all 0.1s ease-out;
 }
